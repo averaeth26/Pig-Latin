@@ -6,15 +6,20 @@ public class PigLatin {
     String word;
     int len;
     while (true) {
-        word = scan.nextLine();
+        System.out.print("Enter a word to be translated: ");
+        word = scan.nextLine().toLowerCase();
         if (word.toLowerCase().equals("quit")) {
+            System.out.println("Goodbye!");
             break;
         }
         len = word.length();
-        if ("aeiou".contains(word.toLowerCase().charAt(0)))
-        word = word.substring()
-
-        
+        if (word.charAt(0) == 'a' || word.charAt(0) == 'e' || word.charAt(0) == 'i' || word.charAt(0) == 'o' || word.charAt(0) == 'u') {
+            word = word + "way";
+        }
+        else {
+            word = word.substring(1, len) + word.charAt(0) + "ay";
+        }
+        System.out.println(word);        
     }
     }
 }
