@@ -29,10 +29,11 @@ public class PigLatin {
                 else {
                     word = word.substring(1, wordLen) + word.charAt(0) + "ay";
                 }
-        System.out.println(word);    
+        System.out.print(word + " ");    
             }
             
-        }         
+        } 
+        System.out.println("");
     }
     }
 }
